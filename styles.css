@@ -1,0 +1,156 @@
+header {
+    grid-area: header-area;
+    background-color: black;
+    background-image: linear-gradient(to right, #206e9c, #583333);
+}
+
+h1 {
+    background-color: black;
+    color: aliceblue;
+    background-image:  linear-gradient(to right, #DDD1D1, #A06262);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 15px;
+    font-family: "Lexend Tera", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px #a06262c9, 0 0 25px rgba(119, 21, 51, 0.773), 0 0 5px rgba(78, 78, 162, 0.755);
+}
+
+main {
+    grid-area: main-area;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px; 
+}
+
+footer {
+    grid-area: footer-area;
+    background-color: black;
+    background-image: linear-gradient(to right, #206e9c, #583333);
+}
+
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #206e9c, #583333);
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid: 
+        "header-area" 30%
+        "main-area" 120%
+        "footer-area" 20%
+        / 1fr
+    ;
+}
+
+div.movie {
+    width: 300px;
+    height: 400px;
+    background-color: #124a6b;
+    border-radius: 30px;
+    box-shadow: 10px 10px 40px #708a99;
+    position: relative;
+    top: 0;
+}
+
+.box1 {
+    background-image: url(./assets/images/interstellar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box2 {
+    background-image: url(./assets/images/howls-moving-castle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box3 {
+    background-image: url(./assets/images/the-day-after-tomorow.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box4 {
+    background-image: url(./assets/images/the-hateful-eight.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.movie > div {
+    width: 100%;
+    height: 50px;
+    background-color: #5a2f2f9b;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    position: absolute;
+    top: 350px;
+    transition: width 10s;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
+}
+
+div.movie > div:hover {
+    height: auto;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(208, 212, 217);
+    z-index: 1;
+}
+
+main h2 {
+    margin: 0;
+}
+
+main a {
+    text-decoration: none;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(208, 212, 217);
+    padding: 10px 30px 0px 30px;
+}
+
+.circle {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 3px;
+    border-radius: 50%;
+    width: 27px;
+    height: 24px;
+    text-align: center;
+}
+
+.circle12 {
+    border: 4px solid yellow;
+    color: yellow;
+}
+
+.circle6 {
+    border: 4px solid rgb(62, 180, 11);
+    color: rgb(62, 180, 11);
+}
+
+.circle18 {
+    border: 4px solid rgb(212, 19, 19);
+    color: rgb(212, 19, 19);
+}
+
+
+
