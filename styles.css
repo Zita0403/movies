@@ -5,10 +5,10 @@ body {
     margin: 0;
     display: grid;
     grid: 
-        "header-area" 30%
+        "header-area" 20%
         "tabs-area" auto
-        "main-area" 85%
-        "footer-area" 20%
+        "main-area" 90%
+        "footer-area" 15%
         / 1fr
     ;
 }
@@ -241,7 +241,7 @@ footer h2 {
 
 button {
     border-radius: 20px;
-    margin: 50px;
+    margin: 20px;
     background-color: #124a6b;
     border: 1px solid #124a6b;
     box-shadow: 2px 2px 5px rgba(112, 138, 153, 0.734);
