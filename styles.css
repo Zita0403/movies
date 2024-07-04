@@ -1,3 +1,19 @@
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #206e9c, #583333);
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid: 
+        "header-area" 30%
+        "main-area" 85%
+        "footer-area" 20%
+        / 1fr
+    ;
+}
+
+/* Header */
+
 header {
     grid-area: header-area;
     background-color: black;
@@ -20,7 +36,61 @@ h1 {
     text-shadow: 1px 1px 2px #a06262c9, 0 0 25px rgba(119, 21, 51, 0.773), 0 0 5px rgba(78, 78, 162, 0.755);
 }
 
+h1:hover {
+    cursor: pointer;
+}
+
+/* Tabs */
+
+#tabs {
+    background-color: #000000;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(208, 212, 217);
+    border: #583333;
+    box-shadow: 1px 1px 2px #a06262c9, 0 0 25px rgba(119, 21, 51, 0.773), 0 0 5px rgba(78, 78, 162, 0.755);;
+}
+
+#tabs ul {
+    background-color:#583333bc;
+    border: 1px solid #583333;
+}
+
+#tabs ul li {
+    border: 1px solid #3d9782;
+    background:#3d9782;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+#tabs div p {
+    color: rgb(208, 212, 217);
+}
+
+#tabs-1, #tabs-2, #tabs-3 {
+    background-color: #000000;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(208, 212, 217);
+}
+
+.img-container1 {
+    height: 300px;
+}
+
+.img-container1 img {
+    height: 100%;
+}
+
+
+/* Main */
+
 main {
+    margin: 0;
     grid-area: main-area;
     background-color: black;
     display: flex;
@@ -28,26 +98,6 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 50px; 
-}
-
-footer {
-    grid-area: footer-area;
-    background-color: black;
-    background-image: linear-gradient(to right, #206e9c, #583333);
-}
-
-body {
-    box-sizing: border-box;
-    background-image: linear-gradient(to right, #206e9c, #583333);
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid: 
-        "header-area" 30%
-        "main-area" 120%
-        "footer-area" 20%
-        / 1fr
-    ;
 }
 
 div.movie {
@@ -61,7 +111,8 @@ div.movie {
 }
 
 .box1 {
-    background-image: url(./assets/images/interstellar.jpg);
+    background-image: url(./assets/images/interstellar.jpg );
+    /* https://www.mordeo.org/files/uploads/2020/05/Interstellar-Sci-Fi-4K-Ultra-HD-Mobile-Wallpaper-1152x2048.jpg */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -69,6 +120,7 @@ div.movie {
 
 .box2 {
     background-image: url(./assets/images/howls-moving-castle.jpg);
+    /* https://moewalls.com/wp-content/uploads/2021/08/howl-s-moving-castle-thumb.jpg */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -76,6 +128,7 @@ div.movie {
 
 .box3 {
     background-image: url(./assets/images/the-day-after-tomorow.jpg);
+    /* https://e0.pxfuel.com/wallpapers/508/156/desktop-wallpaper-the-day-after-tomorrow-2022-movie.jpg */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -83,36 +136,47 @@ div.movie {
 
 .box4 {
     background-image: url(./assets/images/the-hateful-eight.jpg);
+    /* https://e0.pxfuel.com/wallpapers/47/62/desktop-wallpaper-the-hateful-eight-2015-phone-the-hateful-8.jpg */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-div.movie > div {
+div.movie-info {
     width: 100%;
     height: 50px;
     background-color: #5a2f2f9b;
-    text-align: center;
     border-radius: 0 0 30px 30px;
-    position: absolute;
-    top: 350px;
-    transition: width 10s;
-    transition-timing-function: ease-in-out;
-    overflow: hidden;
-}
-
-div.movie > div:hover {
-    height: auto;
+    text-align: center;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: rgb(208, 212, 217);
+    position: absolute;
+    top: 350px;
     z-index: 1;
 }
 
 main h2 {
+    position: relative;
+    top: 6px;
     margin: 0;
+}
+
+h2:hover {
+    cursor: pointer;
+}
+
+.plus-info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 540%;
+    background-color: #5a2f2f9b;
+    border-radius: 0 0 30px 30px;
+    align-content: end;
+    z-index: -1;
 }
 
 main a {
@@ -152,5 +216,34 @@ main a {
     color: rgb(212, 19, 19);
 }
 
+/* Footer */
+
+footer {
+    grid-area: footer-area;
+    background-color: black;
+    background-image: linear-gradient(to right, #206e9c, #583333);
+}
+
+footer h2 {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(208, 212, 217);
+    margin-left: 30px;
+}
+
+button {
+    margin: 50px;
+    background-color: #124a6ba7;
+}
+
+.img-container2 {
+    height: 50px;
+}
+
+.img-container2 img {
+    height: 100%;
+}
 
 

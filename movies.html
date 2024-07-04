@@ -7,60 +7,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lexend+Tera:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Filmek</h1>
+        <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Hamarosan</a></li>
+              <li><a href="#tabs-2">Legjobb értékelést kapott filmek</a></li>
+              <li><a href="#tabs-3">Legrosszabb értékelést kapott filmek</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="img-container1">
+                    <img src="./assets/images/soon.jpg" alt="coming soon movies">
+                </div>
+            </div>
+            <div id="tabs-2">
+                <ol>
+                    <li>A remény rabjai (1994)</li>
+                    <li>A keresztapa (1972)</li>
+                    <li>A sötét lovag (2008)</li>
+                    <li>A keresztapa II (1974)</li>
+                    <li>Tizenkét dühös ember (1957)</li>
+                </ol>
+            </div>
+            <div id="tabs-3">
+                <ol>
+                    <li>Ballistic - Robbanásig feltöltve (2002)</li>
+                    <li>Nem fogadott hívás (2008)</li>
+                    <li>Az otthagyottak (2014)</li>
+                    <li>Ezer szó (2012)</li>
+                    <li>Gotti (2018)</li>
+                </ol>
+            </div>
+          </div>
     </header>
+    <!-- Main -->
     <main>
+        <!-- Első kártya -->
         <div class="movie box1">
             <h2 class="circle circle12">12</h2>
-            <div>
-                <h2> <a href="#">Interstellar</a></h2>
-                <p>Író: Jonathan Nolan, Christopher Nolan</p>
-                <p>Rendező: Christopher Nolan</p>
-                <p>Megjelenés éve: 2014</p>
-                <p>Műfaj: Sci-fi, Kaland, Dráma</p>
-                <p>Korhatár: 12</p>
-            </div>
+            <div class="movie-info">
+                <h2>Csillagok között</h2>
+                <div class="plus-info hide">
+                    <p>Interstellar</p>
+                    <p>Író: Jonathan Nolan, Christopher Nolan</p>
+                    <p>Rendező: Christopher Nolan</p>
+                    <p>Megjelenés éve: 2014</p>
+                    <p>Műfaj: Sci-fi, Kaland, Dráma</p>
+                    <p>Korhatár: 12</p>
+                </div>
+            </div> 
         </div>
+        <!-- Második kártya -->
         <div class="movie box2">
             <h2 class="circle circle6">6</h2>
-            <div>
-                <h2><a href="#">Howl's Moving Castle</a></h2>
-                <p>Író: Diana Wynne Jones</p>
-                <p>Rendező: Hayao Miyazaki</p>
-                <p>Megjelenés éve: 2005</p>
-                <p>Műfaj: Családi, Kaland, Fantasy, Animáció</p>
-                <p>Korhatár: 6</p>
+            <div class="movie-info">
+                <h2>A vándorló palota</h2>
+                <div class="plus-info hide">
+                    <p>Howl's Moving Castle</p>
+                    <p>Író: Diana Wynne Jones</p>
+                    <p>Rendező: Hayao Miyazaki</p>
+                    <p>Megjelenés éve: 2005</p>
+                    <p>Műfaj: Családi, Kaland, Fantasy, Animáció</p>
+                    <p>Korhatár: 6</p>
+                </div>
             </div>
         </div>
+        <!-- Harmadik kártya -->
         <div class="movie box3">
             <h2 class="circle circle12">12</h2>
-            <div>
-                <h2><a href="#">The Day After Tomorrow</a></h2>
-                <p>Író: Roland Emmerich, Jeffrey Nachmanoff</p>
-                <p>Rendező: Roland Emmerich</p>
-                <p>Megjelenés éve: 2004</p>
-                <p>Műfaj: Sci-fi, Kaland, Akció, Katasztrófa, Thriller</p>
-                <p>Korhatár: 12</p>
+            <div class="movie-info">
+                <h2>Holnapután</h2>
+                <div class="plus-info hide">
+                    <p>The Day After Tomorrow</p>
+                    <p>Író: Roland Emmerich, Jeffrey Nachmanoff</p>
+                    <p>Rendező: Roland Emmerich</p>
+                    <p>Megjelenés éve: 2004</p>
+                    <p>Műfaj: Sci-fi, Kaland, Akció, Katasztrófa, Thriller</p>
+                    <p>Korhatár: 12</p> 
+                </div>
             </div>
         </div>
+        <!-- Negyedik kártya -->
         <div class="movie box4">
             <h2 class="circle circle18">18</h2>
-            <div>
-                <h2><a href="#">The Hateful Eight</a></h2>
-                <p>Író: Quentin Tarantino</p>
-                <p>Rendező: Quentin Tarantino</p>
-                <p>Megjelenés éve: 2016</p>
-                <p>Műfaj: Western, Misztikus, Krimi, Thriller</p>
-                <p>Korhatár: 18</p>
+            <div class="movie-info">
+                <h2>Aljas nyolcas</h2>
+                <div class="plus-info hide">
+                    <p>The Hateful Eight</p>
+                    <p>Író: Quentin Tarantino</p>
+                    <p>Rendező: Quentin Tarantino</p>
+                    <p>Megjelenés éve: 2016</p>
+                    <p>Műfaj: Western, Misztikus, Krimi, Thriller</p>
+                    <p>Korhatár: 18</p>
+                </div>
             </div>  
         </div>
     </main>
+    <!-- Footer -->
     <footer>
-
+        <h2>Felhasznált oldalok:</h2>
+        <button>
+            <a href="https://www.imdb.com/?ref_=nv_home" target="_blank">
+                <div class="img-container2">
+                    <img src="./assets/images/imbd-logo.jpg" alt="imbd-logo">
+                </div>   
+            </a>
+        </button>
+        <button>
+            <a href="https://www.rottentomatoes.com/" target="_blank">
+                <div class="img-container2">
+                    <img src="./assets/images/rotten-tomatoes-logo.png" alt="rotten-tomatoes-logo">
+                </div>
+            </a>
+        </button>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
