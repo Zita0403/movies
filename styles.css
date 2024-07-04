@@ -6,6 +6,7 @@ body {
     display: grid;
     grid: 
         "header-area" 30%
+        "tabs-area" auto
         "main-area" 85%
         "footer-area" 20%
         / 1fr
@@ -43,24 +44,25 @@ h1:hover {
 /* Tabs */
 
 #tabs {
-    background-color: #000000;
+    grid-area: tabs-area;
+    background-color:#583333be;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: rgb(208, 212, 217);
     border: #583333;
-    box-shadow: 1px 1px 2px #a06262c9, 0 0 25px rgba(119, 21, 51, 0.773), 0 0 5px rgba(78, 78, 162, 0.755);;
+    box-shadow: 1px 1px 2px #a06262c9, 0 0 25px rgba(119, 21, 51, 0.773), 0 0 5px rgba(78, 78, 162, 0.755);
 }
 
-#tabs ul {
-    background-color:#583333bc;
-    border: 1px solid #583333;
+#tabs > ul {
+    background-color:#58333386;
+    border: 2px solid #a0626267;
 }
 
-#tabs ul li {
-    border: 1px solid #3d9782;
-    background:#3d9782;
+#tabs > ul li {
+    border: 1px solid #3975679c;
+    background:#3b9b83b3;
     font-weight: normal;
     color: #ffffff;
 }
@@ -69,23 +71,27 @@ h1:hover {
     color: rgb(208, 212, 217);
 }
 
-#tabs-1, #tabs-2, #tabs-3 {
-    background-color: #000000;
+#tabs-2, #tabs-3 {
+    background-color:#5833336a;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    line-height: 2rem;
     color: rgb(208, 212, 217);
+    border: #000000;
 }
 
-.img-container1 {
-    height: 300px;
+#tabs-1 ul, #tabs-1 ul li {
+    background-color:#58333300;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2rem;
+    color: rgb(208, 212, 217);
+    border: #000000;
 }
-
-.img-container1 img {
-    height: 100%;
-}
-
 
 /* Main */
 
@@ -105,7 +111,7 @@ div.movie {
     height: 400px;
     background-color: #124a6b;
     border-radius: 30px;
-    box-shadow: 10px 10px 40px #708a99;
+    box-shadow: 10px 10px 40px rgb(112, 138, 153);
     position: relative;
     top: 0;
 }
@@ -164,7 +170,7 @@ main h2 {
     margin: 0;
 }
 
-h2:hover {
+main h2:hover {
     cursor: pointer;
 }
 
@@ -234,16 +240,21 @@ footer h2 {
 }
 
 button {
+    border-radius: 20px;
     margin: 50px;
-    background-color: #124a6ba7;
+    background-color: #124a6b;
+    border: 1px solid #124a6b;
+    box-shadow: 2px 2px 5px rgba(112, 138, 153, 0.734);
 }
 
 .img-container2 {
-    height: 50px;
+    height: 40px;
+    border-radius: 20px;
 }
 
 .img-container2 img {
     height: 100%;
+    border-radius: 20px;
 }
 
 
