@@ -43,7 +43,7 @@ h1:hover {
 
 /* Tabs */
 
-#tabs {
+.ui-widget.ui-widget-content {
     grid-area: tabs-area;
     background-color:#583333be;
     font-family: "Dosis", sans-serif;
@@ -53,44 +53,43 @@ h1:hover {
     color: rgb(208, 212, 217);
     border: #583333;
     box-shadow: 1px 1px 2px #a06262c9, 0 0 25px rgba(119, 21, 51, 0.773), 0 0 5px rgba(78, 78, 162, 0.755);
+    line-height: 2rem;
 }
 
-#tabs > ul {
+.ui-widget.ui-widget-content {
     background-color:#58333386;
     border: 2px solid #a0626267;
 }
 
-#tabs > ul li {
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color: #c49292;
+    font-size: 1.2rem;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #ffffffcc;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border: 1px solid #583333be;
+    background:#583333be;;
+    font-weight: normal;
+    color: #c49292;
+}
+
+.ui-tabs .ui-tabs-nav li {
     border: 1px solid #3975679c;
     background:#3b9b83b3;
     font-weight: normal;
-    color: #ffffff;
+    color: #ffffff;   
 }
 
-#tabs div p {
-    color: rgb(208, 212, 217);
-}
-
-#tabs-2, #tabs-3 {
-    background-color:#5833336a;
-    font-family: "Dosis", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 2rem;
-    color: rgb(208, 212, 217);
-    border: #000000;
-}
-
-#tabs-1 ul, #tabs-1 ul li {
-    background-color:#58333300;
-    font-family: "Dosis", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 2rem;
-    color: rgb(208, 212, 217);
-    border: #000000;
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #3975679c;
+    border-radius: 8px;
+    background:#3b9b83b3;
+    font-weight: normal;
+    color: #ffffff; 
 }
 
 /* Main */
