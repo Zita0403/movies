@@ -46,7 +46,3 @@ $(document).ready(function() {
         $(this).closest("div.movie-info").find("div.plus-info").fadeToggle();
     });
 });
-
-
-
-
